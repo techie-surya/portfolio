@@ -2,54 +2,226 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suryasnata Dash — Portfolio</title>
+  <meta name="description" content="Portfolio of Suryasnata Dash: Education, Skills, Hobbies, and Contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Suryasnata Dash</h1>
-    <p>I code to love.</p>
-    <img src="SURYA POSTCARD.JPG" alt="Surya" height="100px" width="100px">
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#top" aria-label="Home">SD</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-switch">
+        <button id="theme-btn" aria-label="Toggle theme">🌙</button>
+      </div>
+    </nav>
+    <section class="hero" id="top">
+      <div class="hero-content">
+        <img src="SURYA POSTCARD.JPG" alt="Portrait of Suryasnata Dash" class="avatar">
+        <h1>Suryasnata Dash</h1>
+        <p class="tagline">I code to love.</p>
+        <div class="cta">
+          <a href="#contact" class="btn primary">Hire Me</a>
+          <a href="#education" class="btn">Explore</a>
+        </div>
+      </div>
+    </section>
   </header>
-  <hr>
-  <!-- Portfolio Sections -->
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><b>10th Class(CBSE):</b>90.4%</li>
-      <li><b>12th Class(CBSE):</b>86%</li>
-      <li><b>B.Tech in CSE:</b>9.11cgpa</li>
-    </ul>
-    <hr>
-  </section>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>C++</li>
-      <li>Web Dev</li>
-      <li>AIML</li>
-    </ul>
-    <hr>
-  </section>
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          CSE student interested in Python, C++, Web Development, and AIML.
+        </p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Hobbies</h2>
-    <ul>
-      <li>Coding</li>
-      <li>Gaming</li>
-      <li>Reading</li>
-    </ul>
-    <hr>
-  </section>
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <ul class="timeline">
+          <li>
+            <span class="title">10th Class (CBSE)</span>
+            <span class="meta">90.4%</span>
+          </li>
+          <li>
+            <span class="title">12th Class (CBSE)</span>
+            <span class="meta">87%</span>
+          </li>
+          <li>
+            <span class="title">B.Tech in CSE</span>
+            <span class="meta">CGPA 8.96</span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <footer>
-    <ul>
-      <li><b>EMail:</b>surya14dash@gmail.com</li>
-      <li><a href="https://www.linkedin.com/in/suryasnata-dash-584913335/">Linkedin</a></li>
-    </ul>
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Language</h3>
+            <ul class="chip-list">
+              <li><span class="chip-icon">🐍</span>Python</li>
+              <li><span class="chip-icon">⚙️</span>C++</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Web Dev</h3>
+            <ul class="chip-list">
+              <li><span class="chip-icon">🌐</span>HTML5</li>
+              <li><span class="chip-icon">🎨</span>CSS3</li>
+              <li><span class="chip-icon">⚡</span>JavaScript</li>
+              <li><span class="chip-icon">🧪</span>Flask</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Database</h3>
+            <ul class="chip-list">
+              <li><span class="chip-icon">🗄️</span>SQLite</li>
+              <li><span class="chip-icon">🍃</span>MongoDB</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>AIML</h3>
+            <ul class="chip-list">
+              <li><span class="chip-icon">🧮</span>NumPy</li>
+              <li><span class="chip-icon">🐼</span>Pandas</li>
+              <li><span class="chip-icon">🧠</span>scikit-learn</li>
+              <li><span class="chip-icon">🔶</span>TensorFlow</li>
+              <li><span class="chip-icon">📊</span>Matplotlib</li>
+              <li><span class="chip-icon">👁️</span>OpenCV</li>
+              <li><span class="chip-icon">💬</span>NLP</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Development Tools</h3>
+            <ul class="chip-list">
+              <li><span class="chip-icon">🧩</span>Git & Github</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-columns">
+          <div class="project-block">
+            <h3>Personal Projects</h3>
+            <div class="project-grid">
+              <article class="project-card">
+                <h4>Face Detection System</h4>
+                <p>Real-time face detection pipeline with camera input and bounding-box overlays.</p>
+                <div class="project-stack">
+                  <span class="stack-chip">🐍 Python</span>
+                  <span class="stack-chip">👁️ OpenCV</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <h4>Animal Sound Detection System</h4>
+                <p>Audio classification to detect and label animal sounds from recorded clips.</p>
+                <div class="project-stack">
+                  <span class="stack-chip">🐍 Python</span>
+                  <span class="stack-chip">🔊 Audio ML</span>
+                  <span class="stack-chip">🧠 ML</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <h4>AI Medical Diagnosis System</h4>
+                <p>Symptom-based AI assistant providing probable diagnosis suggestions.</p>
+                <div class="project-stack">
+                  <span class="stack-chip">🐍 Python</span>
+                  <span class="stack-chip">🧪 Flask</span>
+                  <span class="stack-chip">🧠 ML</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h3>Group Projects</h3>
+            <div class="project-grid">
+              <article class="project-card">
+                <h4>AI Grievance System</h4>
+                <p>Smart intake and triage for grievances with automated prioritization.</p>
+                <div class="project-stack">
+                  <span class="stack-chip">🐍 Python</span>
+                  <span class="stack-chip">💬 NLP</span>
+                  <span class="stack-chip">🧪 Flask</span>
+                </div>
+              </article>
+              <article class="project-card">
+                <h4>AI Crop Yield & Management System</h4>
+                <p>Crop health monitoring and yield insights with AI-driven recommendations.</p>
+                <div class="project-stack">
+                  <span class="stack-chip">🐍 Python</span>
+                  <span class="stack-chip">🔶 TensorFlow</span>
+                  <span class="stack-chip">🍃 MongoDB</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="section">
+      <div class="container">
+        <h2>Hobbies</h2>
+        <ul class="list">
+          <li>Coding</li>
+          <li>Gaming</li>
+          <li>Reading</li>
+          <li>Traveling</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <a href="mailto:surya14dash@gmail.com" class="contact-card">
+            <span class="icon">✉️</span>
+            <span>Email</span>
+            <small>surya14dash@gmail.com</small>
+          </a>
+          <a href="https://www.linkedin.com/in/suryasnata-dash-584913335/" class="contact-card" target="_blank" rel="noopener">
+            <span class="icon">🔗</span>
+            <span>LinkedIn</span>
+            <small>@suryasnata-dash-584913335</small>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Suryasnata Dash</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
