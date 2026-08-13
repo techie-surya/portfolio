@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var storedTheme = localStorage.getItem("theme");
   if (storedTheme === "dark") {
     html.setAttribute("data-theme", "dark");
-    if (themeBtn) themeBtn.textContent = "☀️";
+    if (themeBtn) themeBtn.textContent = "Light";
   } else {
     html.removeAttribute("data-theme");
-    if (themeBtn) themeBtn.textContent = "🌙";
+    if (themeBtn) themeBtn.textContent = "Dark";
   }
 
   if (themeBtn) {
@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isDark) {
         html.removeAttribute("data-theme");
         localStorage.setItem("theme", "light");
-        themeBtn.textContent = "🌙";
+        themeBtn.textContent = "Dark";
       } else {
         html.setAttribute("data-theme", "dark");
         localStorage.setItem("theme", "dark");
-        themeBtn.textContent = "☀️";
+        themeBtn.textContent = "Light";
       }
     });
   }
